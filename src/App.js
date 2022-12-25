@@ -7,15 +7,15 @@ import { AppHeader } from "./cmps/app-header";
 
 function App() {
   return (
-    <section className="app">
-      <Router>
+    <section className='app main-container'>
       <AppHeader />
+      <main>
         <Routes>
           <Route element={<HomePage />} path={'/'} />
           <Route element={<Favorites />} path={'/favorites'} />
           <Route element={<Search />} path={'/search'} />
         </Routes>
-      </Router>
+      </main>
     </section>
   )
 }
