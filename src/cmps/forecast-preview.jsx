@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import day from "../assets/img/day.png"
 import night from "../assets/img/night.png"
 import moment from "moment"
+import { weatherService } from "../services/weather.service";
 
 
 export function ForecastPreview({ forecast }) {
